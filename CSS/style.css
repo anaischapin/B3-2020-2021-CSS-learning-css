@@ -1,0 +1,65 @@
+
+* {
+	box-sizing: border-box;
+	margin : 20px;
+}
+
+@font-face {
+	font-family: 'Roboto Flex';
+	src: url('RobotoFlex-VF.woff2') format('woff2 supports variations'),
+       url('RobotoFlex-VF.woff2') format('woff2-variations');
+	font-weight: 100 1000;
+	font-stretch: 25% 151%;
+}
+
+p {
+	font-family: 'Roboto';
+}
+
+@media screen and (min-width: 1024px)
+{
+	h1 {font-family: 'Fraunces';
+		font-size: 5vw;
+	}
+
+	.contents {
+		columns: 400px;
+	}
+
+	*{
+		background-color: #c5ff78 ;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+	h1 {font-family: 'Fraunces';
+		font-size: 5vw;
+	}
+
+	.contents {
+		columns: 200px;
+	}
+
+	*{
+		background-color: #d3cc87 ;
+	}
+
+}
+
+@media screen and (max-width: 768px)
+{
+	h1 {font-family: 'Fraunces';
+		font-size: 5vw;
+	}
+
+	.contents {
+		columns: 150px;
+	}
+
+	*{
+		background-color: #e2aa84 ;
+	}
+
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltf">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport">
+	<title>Index</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<h1>Designing with Variable Fonts</h1>
+
+	<div class="contents">
+		<h2>A new kind of font</h2>
+
+		<p>Variable fonts are an evolution of the OpenType specification. They let you use CSS to access all the styles contained in a single font file without worrying about browser distortions like fake bolds or italics.
+		Previously, using multiple styles meant loading multiple files—one for every width, weight, or italic. This created tension between design expressiveness (the number of fonts used) and website performance (the amount of data to download). With variable fonts, that whole equation changes.
+		Now you can use as many variations of a font as you like without slowing down your site</p>
+	
+		<h2>What’s an axis?</h2>
+
+		<p>A variation axis is the expression of a single aspect of a typeface’s design.
+		The weight axis, for example, defines how light or bold a font looks. With standard fonts, the terms “normal” and “bold” refer to specific files that are called to serve those styles. With variable fonts, weight is conveyed through minimum and maximum numeric values, and designers or developers can choose any value in between.</p>
+		<p>Not every variable font will have every possible axis (weight will likely be the most popular), but the format, browser implementation, and operating systems guarantee they’ll all work as intended.</p>
+		<p>Axes are divided into 2 types, registered and custom. While there are currently 5 registered axes, type designers can define their own custom axes, creating any kind of variations they can dream up. There are fonts with custom axes for grade, expressiveness, the ascender and descender height of lowercase letters, and countless more. The format itself is purposely left open to allow this sort of innovation.</p>
+		<p>In the CSS, the abbreviations of the registered or conventional axes are written in lowercase, and the abbreviations of custom axes are written in uppercase. The registered axes map to standard CSS attributes. Custom axes can be referenced using the new CSS attribute font-variation-settings.</p>
+
+		<h2>Why this matters</h2>
+
+		<p>Downloading a single file instead of multiple individual fonts can yield a significant performance gain in reduced file size and fewer file requests.
+		Variable fonts are better for web and mobile apps</p>
+		<p>Since that single file includes the entire design space instead of a few very specific weights or other variants, the design vocabulary is much greater. Instead of only 1 or 2 weights, the entire available range can be referenced directly via CSS—from extra-light to extra-heavy, narrow to wide, upright to italic.
+		</p>
+		<p>Effective use of type generates greater clarity and hierarchy, which benefits both design and user experience. There are accessibility benefits, too, like providing a way for users to increase font weight and color contrast to help with low vision, or making subtle adjustments to the typography for a dark-mode implementation for people who are sensitive to light.
+		</p>
+
+
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
