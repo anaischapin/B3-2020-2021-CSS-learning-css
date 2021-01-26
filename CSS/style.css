@@ -4,37 +4,40 @@
 	margin : 20px;
 }
 
-@font-face {
-	font-family: 'Roboto Flex';
-	src: url('RobotoFlex-VF.woff2') format('woff2 supports variations'),
-       url('RobotoFlex-VF.woff2') format('woff2-variations');
-	font-weight: 100 1000;
-	font-stretch: 25% 151%;
-}
-
-p {
-	font-family: 'Roboto';
-}
-
-@media screen and (min-width: 1024px)
-{
-	h1 {font-family: 'Fraunces';
+h1 {
 		font-size: 5vw;
 	}
 
+h2 {
+		font-size: 3vw;
+	}
+
+
+@media screen and (max-width: 768px)
+/*mobile*/
+{
+	
+
 	.contents {
-		columns: 400px;
+		columns: 150px;
 	}
 
 	*{
-		background-color: #c5ff78 ;
+		background-color: #e2aa84 ;
 	}
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px)
+/*pad*/
 {
-	h1 {font-family: 'Fraunces';
-		font-size: 5vw;
+	h1 {
+		color: red;
+		font-weight : 100;
+	}
+
+	h2 {
+		color : red;
 	}
 
 	.contents {
@@ -47,19 +50,29 @@ p {
 
 }
 
-@media screen and (max-width: 768px)
+@media screen and (min-width: 1024px)
+/*desktop*/
 {
-	h1 {font-family: 'Fraunces';
-		font-size: 5vw;
+	h1 {
+		font-family: 'Fraunces';
+		font-weight : 300;
+		color : #9400D3;
+	}
+
+
+	h2 {
+		font-family: 'Fraunces';
+		font-weight : 300;
+		color : #9400D3;
 	}
 
 	.contents {
-		columns: 150px;
+		columns: 400px;
 	}
 
 	*{
-		background-color: #e2aa84 ;
+		background-color: #c5ff78 ;
 	}
-
-
 }
+
+
