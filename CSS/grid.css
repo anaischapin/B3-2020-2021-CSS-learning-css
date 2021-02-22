@@ -1,0 +1,110 @@
+/*MAIN*/
+* {
+	box-sizing: border-box;
+	margin : 10px;
+}
+
+h1, h2 {
+ font-family: 'Fraunces';
+}
+
+img {
+		max-width: 100%;
+	height: auto;
+}
+
+	 /*MOBILE*/
+	 @media screen and (max-width: 768px)
+	 {
+
+	 	*{
+	 		background-color: #e2aa84 ;
+	 	}
+
+		h1 {
+	 		color: black;
+	 		font-weight : 600;
+			font-size: 40px
+	 	}
+
+	 	h2 {
+	 		color : black;
+			font-weight : 600;
+			font-size: 20px
+	 	}
+
+		.l-grid {
+			 display: grid;
+			 grid-template-columns: 100%;
+			// transform: rotate(-45deg);
+			}
+		 .left-column, .center-column, .right-column {
+			 margin: 5px;
+			 padding: 30px;
+			 text-align: left;
+		 }
+
+	 }
+
+	 /*PAD*/
+	 @media screen and (min-width: 768px) and (max-width: 1024px)
+	 {
+	 	*{
+	 		background-color: #d3cc87 ;
+	 	}
+
+	 	h1 {
+	 		color: red;
+	 		font-weight : 700;
+			font-size: 50px
+	 	}
+
+	 	h2 {
+	 		color : red;
+			font-weight : 100;
+			font-size: 30px
+	 	}
+		.l-grid {
+			 display: grid;
+			 grid-template-columns: 50% 50%;
+			// transform: rotate(-45deg);
+			}
+		 .left-column, .center-column, .right-column {
+			 margin: 5px;
+			 padding: 30px;
+			 text-align: left;
+		 }
+
+	 }
+
+	 /*DESKTOP*/
+		@media screen and (min-width: 1024px)
+		{
+			*{
+		 		background-color: #c5ff78 ;
+		 	}
+
+		 	h1 {
+		 		font-weight : 300;
+		 		color : #9400D3;
+				font-size: 50px
+		 	}
+
+
+		 	h2 {
+		 		font-weight : 300;
+		 		color : #9400D3;
+				font-size: 30px
+		 	}
+			.l-grid {
+		     display: grid;
+		     grid-template-columns: 33% 33% 33%;
+		    // transform: rotate(-45deg);
+		    }
+		   .left-column, .center-column, .right-column {
+		     margin: 5px;
+		     padding: 30px;
+		     text-align: left;
+		   }
+
+	 }

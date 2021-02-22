@@ -1,0 +1,90 @@
+
+* {
+	box-sizing: border-box;
+	margin : 10px;
+}
+
+h1 , h2{
+	font-family: 'Fraunces';
+	}
+
+@media screen and (max-width: 768px)
+/*mobile*/
+{
+	*{
+		background-color: #e2aa84 ;
+	}
+	.contents {
+		  column-count: 1;
+			column-gap: 40px;
+			column-span: all;
+			column-width: 100px;
+		}
+
+		h1 {
+	 		color: black;
+	 		font-weight : 600;
+			font-size: 40px
+	 	}
+
+	 	h2 {
+	 		color : black;
+			font-weight : 600;
+			font-size: 20px
+	 	}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+/*pad*/
+{
+		*{
+			background-color: #d3cc87 ;
+		}
+
+		h1 {
+			color: red;
+			font-weight : 700;
+			font-size: 50px
+		}
+
+		h2 {
+			color : red;
+			font-weight : 100;
+			font-size: 30px;
+		}
+
+	.contents {
+			column-count: 2;
+			column-gap: 40px;
+			column-span: all;
+			column-width: 100px;
+		}
+
+}
+
+@media screen and (min-width: 1024px)
+/*desktop*/
+{
+	*{
+		background-color: #c5ff78 ;
+	}
+
+	.contents {
+		  column-count: 3;
+			column-gap: 40px;
+			column-span: all;
+			column-width: 100px;
+		}
+		h1 {
+			font-size: 50px;
+			font-weight : 300;
+			color : #9400D3;
+		}
+
+		h2 {
+			font-size: 30px;
+			font-weight : 300;
+			color : #9400D3;
+		}
+}
